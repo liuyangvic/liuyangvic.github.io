@@ -1,7 +1,5 @@
-## Welcome to liuyangvic's GitHub Pages
+## **Atom**
+memo about [Atom](/atom.md)
 
-### **Atom resource**
-something about [Atom](/atom.md)
-
-### **Python**
-something about [Python](/python.md)
+## **Python**
+memo about [Python](/python.md)
