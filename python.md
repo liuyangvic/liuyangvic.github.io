@@ -1,5 +1,5 @@
 ### Study Python Weekly Report
-Click [here](./study%20python/StudyPythonWeekly.md)
+Click [here](/StudyPythonWeekly.md)
 
 ### Install Python
 dowload from [here](https://www.python.org/downloads/)
