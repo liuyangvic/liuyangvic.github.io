@@ -1,5 +1,6 @@
 ### 2019062
 1. Learned Python3 basic grammer
+
 http://www.runoob.com/python3/python3-basic-syntax.html
 
 ### 20190610
