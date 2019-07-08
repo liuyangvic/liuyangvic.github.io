@@ -1,20 +1,20 @@
 ## 20190708
 1. Learned more about basic data type of python (int, string, tuple, list, set, dictionary)
-http://www.runoob.com/python3/python3-comment.html
-http://www.runoob.com/python3/python3-basic-operators.html
-http://www.runoob.com/python3/python3-number.html
-http://www.runoob.com/python3/python3-string.html
-http://www.runoob.com/python3/python3-list.html
-http://www.runoob.com/python3/python3-tuple.html
-http://www.runoob.com/python3/python3-dictionary.html
-http://www.runoob.com/python3/python3-set.html
+http://www.runoob.com/python3/python3-comment.html <br>
+http://www.runoob.com/python3/python3-basic-operators.html <br> 
+http://www.runoob.com/python3/python3-number.html <br>
+http://www.runoob.com/python3/python3-string.html <br>
+http://www.runoob.com/python3/python3-list.html <br>
+http://www.runoob.com/python3/python3-tuple.html <br>
+http://www.runoob.com/python3/python3-dictionary.html <br> 
+http://www.runoob.com/python3/python3-set.html  <br>
 
 ## 20190705
-1. Learned basic data type of python (int, string, tuple, list, set, dictionary)
+1. Learned basic data type of python (int, string, tuple, list, set, dictionary) <br>
 http://www.runoob.com/python3/python3-data-type.html
 
 ## 20190620
-1. Learned Python3 basic grammer
+1. Learned Python3 basic grammer <br>
    (http://www.runoob.com/python3/python3-basic-syntax.html)
 
 ## 20190610
