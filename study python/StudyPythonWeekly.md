@@ -1,3 +1,14 @@
+## 20190708
+1. Learned more about basic data type of python (int, string, tuple, list, set, dictionary)
+http://www.runoob.com/python3/python3-comment.html
+http://www.runoob.com/python3/python3-basic-operators.html
+http://www.runoob.com/python3/python3-number.html
+http://www.runoob.com/python3/python3-string.html
+http://www.runoob.com/python3/python3-list.html
+http://www.runoob.com/python3/python3-tuple.html
+http://www.runoob.com/python3/python3-dictionary.html
+http://www.runoob.com/python3/python3-set.html
+
 ## 20190705
 1. Learned basic data type of python (int, string, tuple, list, set, dictionary)
 http://www.runoob.com/python3/python3-data-type.html
