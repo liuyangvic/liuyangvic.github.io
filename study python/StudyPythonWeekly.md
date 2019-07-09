@@ -1,3 +1,12 @@
+## 20190710
+1. Learned if control
+http://www.runoob.com/python3/python3-conditional-statements.html <br>
+2. Learned loop control
+http://www.runoob.com/python3/python3-loop.html <br>
+3. Learned iterator and generator
+http://www.runoob.com/python3/python3-iterator-generator.html <br>
+☆memo: generator is a little bit difficult and not totally understand 
+
 ## 20190708
 1. Learned more about basic data type of python (int, string, tuple, list, set, dictionary)
 http://www.runoob.com/python3/python3-comment.html <br>
