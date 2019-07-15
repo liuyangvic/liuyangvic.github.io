@@ -1,3 +1,12 @@
+## 20190715
+1. Learned func
+http://www.runoob.com/python3/python3-function.html <br>
+2. Learned OO-class
+http://www.runoob.com/python3/python3-class.html <br>
+3. Learned data structure
+http://www.runoob.com/python3/python3-data-structure.html<br>
+☆memo: need more time to pratice the class/func/data structure
+
 ## 20190710
 1. Learned if control
 http://www.runoob.com/python3/python3-conditional-statements.html <br>
