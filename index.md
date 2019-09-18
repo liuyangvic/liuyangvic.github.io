@@ -8,4 +8,4 @@ memo about [Python](/python.md)
 memo about [TensorFlow](/tensorflow.md)
 
 ## **Compiler**
-memo about [TensorFlow](/compiler.md)
+memo about [Compiler](/compiler.md)
