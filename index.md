@@ -7,5 +7,5 @@ memo about [Python](/python.md)
 ## **TensorFlow**
 memo about [TensorFlow](/tensorflow.md)
 
-## **Compiler**
-memo about [Compiler](/compiler.md)
+## **Tools (Compiler etc.)**
+memo about [Tools](/tools.md)
