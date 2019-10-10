@@ -1,3 +1,7 @@
+## 20191010
+1. Learned input and output
+http://www.runoob.com/python3/python3-inputoutput.html
+
 ## 20190722
 1. Learned module
 http://www.runoob.com/python3/python3-module.html <br>
