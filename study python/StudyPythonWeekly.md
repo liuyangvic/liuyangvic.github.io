@@ -1,5 +1,16 @@
+## 20191017
+1. Learned file
+https://www.runoob.com/python3/python3-file-methods.html
+2. Learned OS file
+https://www.runoob.com/python3/python3-os-file-methods.html
+3. Learned errors and exceptions
+https://www.runoob.com/python3/python3-errors-execptions.html
+4. Learned Object Oriented
+https://www.runoob.com/python3/python3-class.html
+5.
+
 ## 20191010
-1. Learned input and output
+1.Learned input and output 
 http://www.runoob.com/python3/python3-inputoutput.html
 
 ## 20190722
