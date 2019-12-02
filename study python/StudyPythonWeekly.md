@@ -10,7 +10,7 @@ pip --proxy=ProxyServerURL:ProxyServerPort(e.g.:http:xxx.com:8080) install xlwt
 1.2）Edit sample Python program for processing Excel
 Reference:
 https://zhuanlan.zhihu.com/p/38492442
-https://blog.csdn.net/Cloudox_/article/details/53812213
+https://juejin.im/post/5c67abb9f265da2d9e174402
 
 ## 20191108
 1. Learned namespace
