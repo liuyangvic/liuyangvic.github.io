@@ -1,3 +1,16 @@
+## 20191202
+
+1. Prepare the environment of Python for processing Excel
+1.1) Install nessessary packages
+https://blog.csdn.net/Cloudox_/article/details/53812213
+COMMAND:
+==
+pip --proxy=ProxyServerURL:ProxyServerPort(e.g.:http:xxx.com:8080) install xlrd
+pip --proxy=ProxyServerURL:ProxyServerPort(e.g.:http:xxx.com:8080) install xlwt
+==
+1.2）Edit sample Python program for processing Excel
+
+
 ## 20191108
 1. Learned namespace
 https://www.runoob.com/python3/python3-namespace-scope.html
