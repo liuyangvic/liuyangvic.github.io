@@ -1,4 +1,8 @@
 ## 20191202
+1. Learned Regex Expressions
+https://www.runoob.com/python3/python3-reg-expressions.html
+
+## 20191202
 Topic: Learn how to use Python to read and write Excel
 1. Prepare the environment of Python for processing Excel
 1.1) Install nessessary packages
