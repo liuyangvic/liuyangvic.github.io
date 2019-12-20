@@ -2,6 +2,9 @@
 1. Learned Regex Expressions
 https://www.runoob.com/python3/python3-reg-expressions.html
 
+Reference:
+https://qiita.com/luohao0404/items/7135b2b96f9b0b196bf3#%E6%94%B9%E8%A1%8C%E3%81%AB%E3%81%A4%E3%81%84%E3%81%A6
+
 ## 20191202
 Topic: Learn how to use Python to read and write Excel
 1. Prepare the environment of Python for processing Excel
