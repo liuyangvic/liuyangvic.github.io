@@ -1,3 +1,7 @@
+## 20191223
+1. Learned CGI programing
+https://www.runoob.com/python3/python3-cgi-programming.html
+
 ## 20191220
 1. Learned Regex Expressions
 https://www.runoob.com/python3/python3-reg-expressions.html
