@@ -1,3 +1,7 @@
+## 20200117
+1. Learned SOCKET programing
+https://www.runoob.com/python3/python3-socket.html
+
 ## 20191223
 1. Learned CGI programing
 https://www.runoob.com/python3/python3-cgi-programming.html
