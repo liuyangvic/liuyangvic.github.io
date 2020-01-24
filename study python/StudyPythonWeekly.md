@@ -1,3 +1,7 @@
+## 20200124
+1. Learned multi threading programing
+https://www.runoob.com/python3/python3-multithreading.html
+
 ## 20200117
 1. Learned SOCKET programing
 https://www.runoob.com/python3/python3-socket.html
