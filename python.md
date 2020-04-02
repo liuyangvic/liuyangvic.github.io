@@ -8,3 +8,7 @@ manual about [install](https://blog.csdn.net/qq_25814003/article/details/8060972
 
 ### Study Python
 learn from [here](http://www.runoob.com/python3/python3-tutorial.html)
+
+### Some Practise of Python 
+liuyangvic.github.io/blob/master/study%20python/practise.md
+
