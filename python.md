@@ -10,5 +10,5 @@ manual about [install](https://blog.csdn.net/qq_25814003/article/details/8060972
 learn from [here](http://www.runoob.com/python3/python3-tutorial.html)
 
 ### Some Practise of Python 
-see the source code .[here].(https://github.com/liuyangvic/liuyangvic.github.io/tree/master/study%20python/practise)
+see the source code [here](https://github.com/liuyangvic/liuyangvic.github.io/tree/master/study%20python/practise)
 
