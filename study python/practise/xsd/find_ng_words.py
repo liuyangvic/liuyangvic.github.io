@@ -1,9 +1,9 @@
-import os
+import os,re
 
 # Specify the directory which you want to extract the "prefix" "targetNamespace" "xsd file name"
 # Ex: global_path = ".\\wsdl.release\\"
 #global_path = ".\\XII1k_wsdl.release_schema\\"
-global_path = ".\\検索対象\\11.schema_contents向け\\11.schema_contents向け\\wsdl.release\\"
+global_path = ".\\検索対象\\11.schema_contents向け\\11.schema_contents向け\\wsdl.release\\schema\\"
 
 def traverse_files(path):
 
@@ -86,22 +86,22 @@ def find_prefix(lines, namespace):
 
 def find_PGSXXXXSGP(lines):
     
-    position = lines.find("PGS\[0\-9\]\[0\-9\]\[0\-9\]\[0\-9\]SGP")
+    position = re.findall(r'PGS[0-9][0-9][0-9][0-9]SGP',lines)
 
-    if position == -1:
+    if position == []:
         print("PGSXXXXSGP NOT FOUND!")
         return -1
 
-    found =  lines[position,position+10]
-
-    print(found)
+    #print(position)
     
-    return found
+    return position
 
 
 def main():
 
     files = traverse_files(global_path)
+
+    pgs_words =[]
 
     for i in files:
 
@@ -115,6 +115,19 @@ def main():
         xsd_contents = read_xsd_file(global_path+i)
 
         found_ng_words = find_PGSXXXXSGP(xsd_contents)
+
+        if found_ng_words == -1:
+            continue
+        if found_ng_words == []:
+            continue
+        
+        for index,value in enumerate(found_ng_words):
+            #print(index,value)
+            if value not in pgs_words:
+                pgs_words.append(value)
+                print(value)
+            
+        print(i.ljust(30),found_ng_words)
         
         """
         xsd_contents = read_xsd_file(global_path+i)
@@ -130,6 +143,8 @@ def main():
         print(prefix.ljust(20),target_namespace.ljust(100),i.ljust(50))
 
         """
+    print("================")
+    print("NG words in xsd files:".ljust(30),pgs_words)
 
    
 main()
