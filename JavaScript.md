@@ -1,5 +1,5 @@
 ### Study JavaScript Weekly Report
-Click [here](/study javascript/StudyPythonWeekly.md)
+Click [here](/study javascript/StudyJavaScriptWeekly.md)
 
 ### Install JavaScript
 dowload from [here](https://TBD)
