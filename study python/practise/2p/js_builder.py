@@ -5,7 +5,7 @@ from typing import ContextManager
 import sys, string
 import re
 
-class CppBuilder:
+class JsBuilder:
     """
     Helper class to generate JavaScript code while keeping proper formatting
     """
