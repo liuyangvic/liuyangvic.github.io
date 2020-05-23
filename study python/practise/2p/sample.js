@@ -4,37 +4,37 @@ class Copy_ColorMode {
 	// 本来はテーブルから生成されるが、フレームワーク練習用なので直接JavaScriptで作っている
 	
 	getSupportedKeys() {
-		// 790-090 : デフォルトのコピーカラーモード
-		return [ "790-090" ];
+		// xxx
+		return [ "xxx" ];
 	}
 
 	getRequiredKeys() {
-		// 780-169 : IOTカラーモード（カラー機か白黒機かの判定に使う）
-		return [ "780-169" ];
+		// xxx
+		return [ "xxx" ];
 	}
 
 	correct(expected, required, corrected, failure) {
 		
-		// サポートしているデータがない場合は何もしない
-		if (! expected["790-090"]) {
+		// xxx
+		if (! expected["xxx"]) {
 			return;
 		}
 		
 		// 必要なデータが提供されない場合はエラーを応答する
-		if (! required["780-169"]) {
-			failure.push({"key" : "790-090", "value" : expected["790-090"], "reason" : "Required"});
+		if (! required["xxx"]) {
+			failure.push({"key" : "xxx "value" : expected["xxx"], "reason" : "Required"});
 			return;
 		}
 		
-		if (required["780-169"] == 16) {
-			// 白黒機の場合
-			corrected["790-090"] = 2; // 白黒
-			corrected["780-065"] = 0; // Copyのカラーモードのデフォルトに従う
+		if (required["xxx"] == 16) {
+			// xxxの場合
+			corrected["xxx"] = 2; // xxx
+			corrected["7xxx"] = 0; // xxx
 			return;
 		} else {
-			// カラー機の場合
-			corrected["790-090"] = 1; // 自動
-			corrected["780-065"] = 0; // Copyのカラーモードのデフォルトに従う
+			// xxxの場合
+			corrected["xxx"] = 1; // xxx
+			corrected["xxx"] = 0; // xxx
 			return;
 		}
 	}
