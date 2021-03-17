@@ -3,6 +3,8 @@
 Created on Wed Mar 17 19:58:21 2021
 
 @author: 182304
+
+reference: https://hackmd.io/@amostsai/SJkC1_EcX?type=view#%E4%BF%AE%E6%94%B9%E7%9B%AE%E5%89%8D%E5%B7%A5%E4%BD%9C%E8%A1%A8
 """
 
 import xlrd # read excel lib
