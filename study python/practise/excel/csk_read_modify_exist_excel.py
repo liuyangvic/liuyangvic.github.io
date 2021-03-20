@@ -38,7 +38,7 @@ def open_write_excel():
         try:
                 print("****************************************")
                 write_excel = openpyxl.load_workbook(filename=write_file) # open excel file
-                write_excel.active = 1 # sheet index #1st from 0
+                write_excel.active = 0 # sheet index #1st from 0
                 write_sheet = write_excel.active
                 print("This excel includes following sheets:",write_excel.active.title) #print including sheets name
                 
@@ -133,14 +133,41 @@ def open_write_excel():
                                 write_sheet.cell(cnt+1,j).value = "臨床開発本部"
                                 cnt=cnt+1
                 cnt = 1
+                combo = []
+                x=0
+                y=0
+                z=0
                 for j in range(begin_column,158):
                     if  write_sheet.cell(1,j).value == "説明" :
-                        for i in sample_data:                            
-                            if i[0]== "業界団体URL" :
-                                print(i[0],",",i[1])
-                                write_sheet.cell(cnt+1,j).value = i[1]
-                                cnt=cnt+1               
-                
+                        for i in sample_data:
+                                                     
+                                if i[0]== "業界団体URL" :
+                                    print(i[1])
+                                    combo.insert(x,"【業界団体URL】\n"+str(i[1])+"\n")
+                                    print(combo[x])
+                                    x=x+1
+                                    
+                                x=0
+                                if i[0]== "団体2" :
+                                    print(i[1])
+                                    combo.insert(x,str(combo[x])+"【団体2】\n"+str(i[1])+"\n")
+                                    print(combo[x])
+                                    x=x+1
+                                    
+                                x=0
+                                if i[0]== "団体3" :
+                                    print(i[1])
+                                    combo.insert(x,str(combo[x])+"【団体3】\n"+str(i[1])+"\n")
+                                    print(combo[x])
+                                    write_sheet.cell(cnt+1,j).value = combo[x]
+                                    cnt=cnt+1    
+                                    x=x+1
+                        """
+                        for k in range(0,10):             
+                            print(combo[k])
+                            write_sheet.cell(cnt+1,j).value = combo[k]
+                            cnt=cnt+1               
+                        """
                 
                 """
                 print("before:" ,write_sheet.cell(column=0,row=0).value)
