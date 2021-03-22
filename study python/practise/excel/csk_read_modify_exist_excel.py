@@ -57,33 +57,53 @@ def open_write_excel():
         try:
                 print("=============Write sample data START=============")
                 write_excel = openpyxl.load_workbook(filename=write_file) # open excel file
-                write_excel.active = 0 # sheet index from 0
+                write_excel.active = 1 # sheet index from 0
                 write_sheet = write_excel.active
                 print("Write sample data to following sheets:",write_excel.active.title,"has(before)", write_sheet.max_row, "rows,", write_sheet.max_column, "columns") 
                 print("--------------")
                 #begin_column = 1 # openpyxl index starts from 1
                 #begin_row = 2 # openpyxl index starts from 1 # write import data from Row 2
-                cnt = 1
-                #print(write_sheet.min_column,write_sheet.max_column,write_sheet.min_row,write_sheet.max_row)
                 
+                #print(write_sheet.min_column,write_sheet.max_column,write_sheet.min_row,write_sheet.max_row)
+                cnt = 1
                 for j in range(write_sheet.min_column,write_sheet.max_column+1):
-                    if  (write_sheet.cell(1,j).value == "終了実績日時") | (write_sheet.cell(1,j).value == "終了予定日時") :
+                    if  write_sheet.cell(1,j).value == "終了実績日時"  :
                         for i in sample_data:                            
                             if i[0]== "終了日" :
                                 #print(i[0],",",i[1])
                                 write_sheet.cell(cnt+1,j).value = i[1]
                                 cnt=cnt+1
                 print("終了実績日時 write completed!")
+
+                cnt = 1
+                for j in range(write_sheet.min_column,write_sheet.max_column+1):
+                    if  write_sheet.cell(1,j).value == "終了予定日時" :
+                        for i in sample_data:                            
+                            if i[0]== "終了日" :
+                                #print(i[0],",",i[1])
+                                write_sheet.cell(cnt+1,j).value = i[1]
+                                cnt=cnt+1
+                print("終了予定日時 write completed!")
                 
                 cnt = 1
                 for j in range(write_sheet.min_column,write_sheet.max_column+1):
-                    if  (write_sheet.cell(1,j).value == "開始実績日時") | (write_sheet.cell(1,j).value == "開始予定") :
+                    if  write_sheet.cell(1,j).value == "開始実績日時" :
                         for i in sample_data:                            
                             if i[0]== "開始日" :
                                 #print(i[0],",",i[1])
                                 write_sheet.cell(cnt+1,j).value = i[1]
                                 cnt=cnt+1
                 print("開始実績日時 write completed!")
+
+                cnt = 1
+                for j in range(write_sheet.min_column,write_sheet.max_column+1):
+                    if  write_sheet.cell(1,j).value == "開始予定" :
+                        for i in sample_data:                            
+                            if i[0]== "開始日" :
+                                #print(i[0],",",i[1])
+                                write_sheet.cell(cnt+1,j).value = i[1]
+                                cnt=cnt+1
+                print("開始予定 write completed!")
                 
                 cnt = 1
                 for j in range(write_sheet.min_column,write_sheet.max_column+1):
@@ -150,35 +170,74 @@ def open_write_excel():
                                 cnt=cnt+1
                 print("本部・ユニット名 write completed!")
                 
-                cnt = 1
+                #cnt = 1
                 combo = []
                 x=0
+                y=0
+                z=0
                 for j in range(write_sheet.min_column,write_sheet.max_column+1):
                     if  write_sheet.cell(1,j).value == "説明" :
                         for i in sample_data:                                              
-                                if i[0]== "業界団体URL" :
-                                    #print(i[1])
-                                    combo.insert(x,"【業界団体URL】\n"+str(i[1])+"\n")
-                                    #print(combo[x])
-                                    x=x+1
-                                    
-                                x=0
-                                if i[0]== "団体2" :
-                                    #print(i[1])
-                                    combo.insert(x,str(combo[x])+"【団体2】\n"+str(i[1])+"\n")
-                                    #print(combo[x])
-                                    x=x+1
-                                    
-                                x=0
-                                if i[0]== "団体3" :
-                                    #print(i[1])
-                                    combo.insert(x,str(combo[x])+"【団体3】\n"+str(i[1])+"\n")
-                                    #print(combo[x])
-                                    write_sheet.cell(cnt+1,j).value = combo[x]
-                                    cnt=cnt+1    
-                                    x=x+1
-
+                            if i[0]== "業界団体URL" :
+                                #print(i[1])
+                                combo.insert(x,"・業界団体URL<br/>"+str(i[1])+"<br/>")
+                                #print(combo[x])
+                                #write_sheet.cell(x+2,j).value = combo[x]
+                                x=x+1
+                                #cnt=cnt+1
+                                continue
+                                                           
+                            if i[0]== "委員・イニシアティブ名称" :
+                                #print(i[1])
+                                combo.insert(y,str(combo[y])+"・委員・イニシアティブ名称<br/>"+str(i[1])+"<br/>")
+                                #print(combo[y])
+                                y=y+1
+                                continue
+                                
+                            if i[0]== "成果物" :
+                                #print(i[1])
+                                combo.insert(z,str(combo[z])+"成果物<br/>"+str(i[1])+"<br/>")
+                                #print(combo[z])
+                                write_sheet.cell(z+2,j).value = combo[z]
+                                z=z+1
+                                continue
                 print("説明 write completed!")
+
+                #cnt = 1
+                combo = []
+                x=0
+                y=0
+                z=0
+                for j in range(write_sheet.min_column,write_sheet.max_column+1):
+                    if  write_sheet.cell(1,j).value == "タグ" :
+                        for i in sample_data:                                              
+                            if i[0]== "業界団体名" :
+                                #print(i[1])
+                                #combo.insert(x,"・業界団体名<br/>"+str(i[1])+"<br/>")
+                                combo.insert(x,str(i[1])+"<br/>")                                
+                                #print(combo[x])
+                                #write_sheet.cell(x+2,j).value = combo[x]
+                                x=x+1
+                                #cnt=cnt+1
+                                continue
+                                                           
+                            if i[0]== "部会" :
+                                #print(i[1])
+                                #combo.insert(y,str(combo[y])+"・部会<br/>"+str(i[1])+"<br/>")
+                                combo.insert(y,str(combo[y])+str(i[1])+"<br/>")
+                                #print(combo[y])
+                                y=y+1
+                                continue
+                                
+                            if i[0]== "委員・イニシアティブ名称" :
+                                #print(i[1])
+                                #combo.insert(z,str(combo[z])+"委員・イニシアティブ名称<br/>"+str(i[1])+"<br/>")
+                                combo.insert(z,str(combo[z])+str(i[1])+"<br/>")
+                                #print(combo[z])
+                                write_sheet.cell(z+2,j).value = combo[z]
+                                z=z+1
+                                continue
+                print("タグ write completed!")
                 
                 write_excel.save(filename=write_file)
                 print("All items write completed!")
