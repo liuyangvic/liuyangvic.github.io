@@ -2,7 +2,7 @@
 """
 Created on Fri Aug 14 08:18:07 2020
 
-@author: 180515
+@author: 
 """
 '''
 【説明書】
